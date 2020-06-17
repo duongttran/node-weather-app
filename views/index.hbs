@@ -10,11 +10,11 @@
 </form>
 
 {{#if forecast}}
-<p>Weather at {{city}}</p>
+<p class="location-detected">Weather at {{city}}</p>
 <ul>
     <li>temperature: {{forecast.temp}}</li>
     <li>description: {{forecast.weather.0.description}}</li>
-    
+     <li>humidity: {{forecast.humidity}}</li>
 </ul>
 <img src="https://openweathermap.org/img/wn/{{forecast.weather.0.icon}}@2x.png">
 

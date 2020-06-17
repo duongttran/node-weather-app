@@ -14,7 +14,7 @@ router.get('/', async function (req, res, next) {
     console.log(city)
 
     if (!city) {
-      res.render('index', { title: 'Grrr great Weather App' })
+      res.render('index', { title: 'Grrrreat Weather App' })
     }
 
 
@@ -24,7 +24,7 @@ router.get('/', async function (req, res, next) {
     console.log(forecast)
 
     return res.render('index', { 
-      title: 'Grrr great Weather App',
+      title: 'Grrrreat Weather App',
       forecast: forecast.current, city: city
     })
   } catch (err) {

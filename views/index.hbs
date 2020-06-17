@@ -1,0 +1,21 @@
+<h1>{{title}}</h1>
+<p>Welcome Duong to {{title}}</p>
+
+
+
+<form action="/" method="GET">
+    <input name="city" placeholder="Enter a city name" required>
+
+    <input type="submit" value="Get Forecast">
+</form>
+
+{{#if forecast}}
+<p>Weather at {{city}}</p>
+<ul>
+    <li>temperature: {{forecast.temp}}</li>
+    <li>description: {{forecast.weather.0.description}}</li>
+    
+</ul>
+<img src="https://openweathermap.org/img/wn/{{forecast.weather.0.icon}}@2x.png">
+
+{{/if}}
